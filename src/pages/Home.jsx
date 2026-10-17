@@ -17,6 +17,7 @@ export default function Home() {
         <About></About>
         <Impact></Impact>
         <Contact></Contact>
+        
     </div>
   )
 }
