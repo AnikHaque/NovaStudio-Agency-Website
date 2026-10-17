@@ -1,5 +1,6 @@
 import About from "../components/home/About";
 import BrandStrip from "../components/home/BrandStrip";
+import Contact from "../components/home/Contact";
 import Hero from "../components/home/Hero";
 import Impact from "../components/home/Impact";
 import Projects from "../components/home/Projects";
@@ -15,6 +16,7 @@ export default function Home() {
         <Projects></Projects>
         <About></About>
         <Impact></Impact>
+        <Contact></Contact>
     </div>
   )
 }
