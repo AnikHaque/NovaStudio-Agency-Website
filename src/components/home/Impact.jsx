@@ -9,7 +9,7 @@ import {
   RefreshCw,
   Sparkles,
 } from "lucide-react";
-import "./Impact.css";
+import "../../css/home/Impact.css";
 
 const process = [
   {
