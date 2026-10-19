@@ -7,7 +7,7 @@ import {
   Layers3,
   MoveUpRight,
 } from "lucide-react";
-import "./Projects.css";
+import "../../css/home/Projects.css";
 
 const projects = [
   {
