@@ -1,0 +1,868 @@
+
+/* =========================================
+   NOVA STUDIO — ABOUT SECTION
+========================================= */
+
+.nova-about {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 110px;
+  background:
+    radial-gradient(
+      ellipse at 0% 45%,
+      rgba(125, 91, 229, 0.07),
+      transparent 34%
+    ),
+    #080b15;
+}
+
+.nova-about .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* HEADING */
+
+.nova-about-heading {
+  position: relative;
+  margin-bottom: 66px;
+}
+
+.nova-about-title {
+  margin: 0;
+  color: #f5f5ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(44px, 6vw, 76px);
+  font-weight: 600;
+  letter-spacing: -4px;
+  line-height: 1.04;
+}
+
+.nova-about-title > span {
+  color: transparent;
+  background: linear-gradient(105deg, #b79aff, #849bff 58%, #75d3ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.nova-about-heading-note {
+  position: absolute;
+  right: 2%;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #a995ff;
+}
+
+.nova-about-heading-note > span {
+  color: #98a3bb;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* VISUAL COMPOSITION */
+
+.nova-about-visual-column {
+  position: relative;
+}
+
+.nova-about-visual {
+  position: relative;
+  min-height: 490px;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 13px;
+  background:
+    radial-gradient(
+      ellipse at 50% 48%,
+      rgba(114, 91, 226, 0.22),
+      transparent 40%
+    ),
+    linear-gradient(145deg, #151a30, #0d1120 70%, #111529);
+}
+
+.nova-about-visual-grid {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(ellipse at center, black, transparent 78%);
+}
+
+.nova-about-visual::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 330px;
+  height: 330px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(115, 91, 239, 0.13);
+  filter: blur(70px);
+  content: "";
+  pointer-events: none;
+}
+
+.nova-about-visual-top {
+  position: absolute;
+  z-index: 5;
+  top: 23px;
+  right: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.nova-about-visual-top > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #a6b0c9;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.nova-about-visual-top > span:last-child {
+  color: #707b95;
+}
+
+.nova-about-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #a98aff;
+  box-shadow: 0 0 12px rgba(169, 138, 255, 0.8);
+}
+
+/* ORBIT LAYERS */
+
+.nova-about-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(173, 155, 255, 0.2);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.nova-about-orbit-one {
+  width: 285px;
+  height: 285px;
+  margin-top: -10px;
+  margin-left: -142px;
+  transform: rotate(-25deg);
+}
+
+.nova-about-orbit-one::before,
+.nova-about-orbit-two::before {
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #b49bff;
+  box-shadow: 0 0 18px rgba(180, 155, 255, 0.8);
+  content: "";
+}
+
+.nova-about-orbit-two {
+  width: 350px;
+  height: 205px;
+  margin-top: -20px;
+  margin-left: -175px;
+  transform: rotate(-35deg);
+  border-color: rgba(114, 165, 255, 0.2);
+}
+
+.nova-about-orbit-two::before {
+  background: #80caff;
+  box-shadow: 0 0 18px rgba(128, 202, 255, 0.75);
+}
+
+/* CENTER OBJECT */
+
+.nova-about-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: grid;
+  width: 148px;
+  height: 148px;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(195, 176, 255, 0.4);
+  border-radius: 35px;
+  background: linear-gradient(
+    145deg,
+    rgba(170, 141, 255, 0.22),
+    rgba(88, 116, 225, 0.13) 55%,
+    rgba(255, 255, 255, 0.04)
+  );
+  box-shadow:
+    0 0 0 10px rgba(165, 139, 255, 0.035),
+    0 0 70px rgba(133, 106, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+}
+
+.nova-about-core-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.nova-about-core-symbol {
+  display: grid;
+  width: 66px;
+  height: 66px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 21px;
+  background: linear-gradient(140deg, #b59aff, #7c7cf0 55%, #68c7ff);
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 39px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  box-shadow: 0 10px 30px rgba(105, 100, 226, 0.28);
+}
+
+.nova-about-core-label {
+  color: #e0dcff;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+/* FLOATING LABELS */
+
+.nova-about-float {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  background: rgba(18, 23, 42, 0.82);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+}
+
+.nova-about-float-design {
+  top: 26%;
+  left: 6%;
+}
+
+.nova-about-float-build {
+  right: 5%;
+  bottom: 24%;
+}
+
+.nova-about-float-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  place-items: center;
+  border: 1px solid rgba(174, 149, 255, 0.23);
+  border-radius: 9px;
+  background: rgba(149, 122, 255, 0.12);
+  color: #bba4ff;
+}
+
+.nova-about-float-build .nova-about-float-icon {
+  border-color: rgba(114, 184, 255, 0.24);
+  background: rgba(94, 154, 255, 0.1);
+  color: #91caff;
+}
+
+.nova-about-float strong,
+.nova-about-float small {
+  display: block;
+  white-space: nowrap;
+}
+
+.nova-about-float strong {
+  margin-bottom: 4px;
+  color: #edf0ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.nova-about-float small {
+  color: #929db7;
+  font-size: 9px;
+}
+
+.nova-about-sparkle {
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(180, 155, 255, 0.22);
+  border-radius: 50%;
+  background: rgba(164, 132, 255, 0.09);
+  color: #c1aaff;
+}
+
+.nova-about-sparkle-one {
+  top: 24%;
+  right: 17%;
+}
+
+.nova-about-visual-bottom {
+  position: absolute;
+  right: 24px;
+  bottom: 21px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.nova-about-visual-bottom > span:not(.nova-about-bottom-separator) {
+  color: #9da8c0;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.nova-about-bottom-separator {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #a88aff;
+}
+
+/* ABOUT COPY */
+
+.nova-about-copy-column {
+  padding-left: clamp(35px, 5vw, 75px);
+}
+
+.nova-about-kicker {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #a994ff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nova-about-copy-column h3 {
+  max-width: 520px;
+  margin: 0 0 22px;
+  color: #f2f2ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(29px, 3.2vw, 43px);
+  font-weight: 600;
+  letter-spacing: -1.8px;
+  line-height: 1.22;
+}
+
+.nova-about-copy-column h3 > span {
+  color: #a99aff;
+}
+
+.nova-about-description {
+  max-width: 500px;
+  margin: 0 0 15px;
+  color: #9aa5bc;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.nova-about-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 17px;
+  margin-top: 17px;
+  color: #eeeaff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.nova-about-cta > span {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  border: 1px solid rgba(174, 149, 255, 0.35);
+  border-radius: 50%;
+  background: rgba(150, 124, 255, 0.1);
+  color: #c0aaff;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.nova-about-cta:hover {
+  color: #bba5ff;
+}
+
+.nova-about-cta:hover > span {
+  transform: rotate(45deg);
+  background: rgba(150, 124, 255, 0.2);
+}
+
+.nova-about-copy-foot {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 36px;
+}
+
+.nova-about-copy-foot-line {
+  width: 30px;
+  height: 1px;
+  background: linear-gradient(90deg, #ad91ff, transparent);
+}
+
+.nova-about-copy-foot > span:last-child {
+  color: #69748d;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+/* PRINCIPLES */
+
+.nova-about-principles {
+  margin-top: 105px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nova-about-principles-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 19px 23px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.nova-about-principles-heading > span {
+  color: #9da7bf;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.nova-about-principles-heading > span:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #a99aff;
+}
+
+.nova-about-principle-column {
+  display: flex;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nova-about-principle {
+  position: relative;
+  width: 100%;
+  min-height: 215px;
+  padding: 25px 25px 30px;
+  background: rgba(14, 18, 32, 0.45);
+  transition: background 0.3s ease;
+}
+
+.nova-about-principle:hover {
+  background: rgba(26, 29, 49, 0.78);
+}
+
+.nova-about-principle-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.nova-about-principle-top > span {
+  color: #737f99;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.nova-about-principle-top > svg {
+  color: #b29aff;
+  transition: transform 0.3s ease;
+}
+
+.nova-about-principle:hover .nova-about-principle-top > svg {
+  transform: rotate(-12deg) scale(1.12);
+}
+
+.nova-about-principle h4 {
+  margin: 0 0 11px;
+  color: #e9eaf8;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.nova-about-principle p {
+  max-width: 300px;
+  margin: 0;
+  color: #929db4;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.nova-about-principle-arrow {
+  position: absolute;
+  right: 23px;
+  bottom: 22px;
+  color: #68738b;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.nova-about-principle:hover .nova-about-principle-arrow {
+  transform: translate(3px, 3px);
+  color: #b49aff;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1199.98px) {
+  .nova-about-visual {
+    min-height: 440px;
+  }
+
+  .nova-about-orbit-one {
+    width: 245px;
+    height: 245px;
+    margin-left: -122px;
+  }
+
+  .nova-about-orbit-two {
+    width: 300px;
+    height: 185px;
+    margin-left: -150px;
+  }
+
+  .nova-about-core {
+    width: 130px;
+    height: 130px;
+  }
+
+  .nova-about-core-symbol {
+    width: 58px;
+    height: 58px;
+    font-size: 34px;
+  }
+
+  .nova-about-float-design {
+    left: 4%;
+  }
+
+  .nova-about-float-build {
+    right: 3%;
+  }
+
+  .nova-about-copy-column {
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nova-about {
+    padding: 90px 0 80px;
+  }
+
+  .nova-about-heading {
+    margin-bottom: 45px;
+  }
+
+  .nova-about-title {
+    font-size: clamp(45px, 7vw, 65px);
+    letter-spacing: -3px;
+  }
+
+  .nova-about-visual {
+    min-height: 465px;
+  }
+
+  .nova-about-copy-column {
+    padding: 45px 12px 0;
+  }
+
+  .nova-about-copy-column h3 {
+    max-width: 650px;
+    font-size: clamp(31px, 5vw, 43px);
+  }
+
+  .nova-about-description {
+    max-width: 650px;
+  }
+
+  .nova-about-principles {
+    margin-top: 75px;
+  }
+
+  .nova-about-principle {
+    min-height: 230px;
+    padding: 22px 18px 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nova-about {
+    padding: 75px 0 65px;
+  }
+
+  .nova-about-heading {
+    margin-bottom: 35px;
+  }
+
+  .nova-about-title {
+    font-size: clamp(39px, 8vw, 56px);
+    letter-spacing: -2.5px;
+  }
+
+  .nova-about-heading-note {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .nova-about-visual {
+    min-height: 425px;
+  }
+
+  .nova-about-visual-top {
+    top: 18px;
+    right: 17px;
+    left: 17px;
+  }
+
+  .nova-about-orbit-one {
+    width: 235px;
+    height: 235px;
+    margin-left: -117px;
+  }
+
+  .nova-about-orbit-two {
+    width: 280px;
+    height: 175px;
+    margin-left: -140px;
+  }
+
+  .nova-about-float-design {
+    top: 25%;
+    left: 4%;
+  }
+
+  .nova-about-float-build {
+    right: 3%;
+    bottom: 23%;
+  }
+
+  .nova-about-float {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .nova-about-float-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nova-about-float strong {
+    font-size: 10px;
+  }
+
+  .nova-about-float small {
+    font-size: 8px;
+  }
+
+  .nova-about-core {
+    width: 120px;
+    height: 120px;
+    border-radius: 29px;
+  }
+
+  .nova-about-core-symbol {
+    width: 53px;
+    height: 53px;
+    border-radius: 17px;
+    font-size: 31px;
+  }
+
+  .nova-about-copy-column {
+    padding: 37px 12px 0;
+  }
+
+  .nova-about-copy-column h3 {
+    font-size: clamp(30px, 6vw, 39px);
+    letter-spacing: -1.3px;
+  }
+
+  .nova-about-description {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+
+  .nova-about-copy-foot {
+    margin-top: 28px;
+  }
+
+  .nova-about-principles {
+    margin-top: 60px;
+  }
+
+  .nova-about-principle {
+    min-height: 195px;
+  }
+
+  .nova-about-principle-column:last-child .nova-about-principle {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .nova-about-visual {
+    min-height: 365px;
+  }
+
+  .nova-about-visual-top > span {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+
+  .nova-about-orbit-one {
+    width: 205px;
+    height: 205px;
+    margin-left: -102px;
+  }
+
+  .nova-about-orbit-two {
+    width: 245px;
+    height: 155px;
+    margin-left: -122px;
+  }
+
+  .nova-about-core {
+    width: 105px;
+    height: 105px;
+    border-radius: 25px;
+  }
+
+  .nova-about-core-symbol {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    font-size: 28px;
+  }
+
+  .nova-about-core-label {
+    font-size: 6px;
+  }
+
+  .nova-about-float-design {
+    top: 24%;
+  }
+
+  .nova-about-float-build {
+    bottom: 22%;
+  }
+
+  .nova-about-float {
+    gap: 7px;
+    padding: 8px;
+  }
+
+  .nova-about-float-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .nova-about-float-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .nova-about-float strong {
+    font-size: 9px;
+  }
+
+  .nova-about-float small {
+    font-size: 7px;
+  }
+
+  .nova-about-sparkle-one {
+    right: 10%;
+    width: 34px;
+    height: 34px;
+  }
+
+  .nova-about-visual-bottom {
+    right: 12px;
+    left: 12px;
+    gap: 7px;
+  }
+
+  .nova-about-visual-bottom > span:not(.nova-about-bottom-separator) {
+    font-size: 6px;
+    letter-spacing: 0.8px;
+  }
+
+  .nova-about-principles-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .nova-about-principle {
+    min-height: 185px;
+    padding: 20px 17px 30px;
+  }
+
+  .nova-about-principle h4 {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nova-about-float,
+  .nova-about-core,
+  .nova-about-orbit,
+  .nova-about-sparkle,
+  .nova-about-cta,
+  .nova-about-cta > span,
+  .nova-about-principle,
+  .nova-about-principle-top > svg,
+  .nova-about-principle-arrow {
+    animation: none !important;
+    transition: none !important;
+  }
+}
