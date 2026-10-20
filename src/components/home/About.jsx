@@ -11,7 +11,7 @@ import {
   Scan,
   Sparkles,
 } from "lucide-react";
-import "./About.css";
+import "../../css/home/About.css";
 
 const principles = [
   {

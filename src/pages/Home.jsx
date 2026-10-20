@@ -1,3 +1,4 @@
+import About from "../components/home/About";
 import BrandStrip from "../components/home/BrandStrip";
 import Hero from "../components/home/Hero";
 import Projects from "../components/home/Projects";
@@ -11,6 +12,7 @@ export default function Home() {
         <BrandStrip></BrandStrip>
         <Services></Services>
         <Projects></Projects>
+        <About></About>
     </div>
   )
 }
