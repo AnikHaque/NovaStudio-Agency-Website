@@ -1,0 +1,175 @@
+/* =====================================
+   BRAND STRIP
+===================================== */
+
+.brand-strip {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 0 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.055);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+  background: linear-gradient(
+    90deg,
+    rgba(17, 21, 37, 0.94),
+    rgba(12, 16, 29, 0.98),
+    rgba(17, 21, 37, 0.94)
+  );
+}
+
+.brand-strip-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 23px;
+}
+
+.brand-strip-heading p {
+  margin: 0;
+  color: #8f99b0;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+.brand-strip-line {
+  width: 35px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #8170c7);
+}
+
+.brand-strip-line:last-child {
+  background: linear-gradient(90deg, #8170c7, transparent);
+}
+
+/* Animated track */
+
+.brand-strip-window {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 7%,
+    #000 93%,
+    transparent
+  );
+}
+
+.brand-strip-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.brand-strip-group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.brand-strip-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  padding: 5px 27px;
+  color: #d1d6e4;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.brand-strip-icon {
+  display: grid;
+  width: 33px;
+  height: 33px;
+  flex-shrink: 0;
+  place-items: center;
+  border: 1px solid rgba(174, 148, 255, 0.17);
+  border-radius: 10px;
+  background: rgba(143, 109, 255, 0.075);
+  color: #b7a0ff;
+}
+
+.brand-strip-star {
+  margin-left: 14px;
+  color: #666f88;
+  font-size: 16px;
+}
+
+/* Footer line */
+
+.brand-strip-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 22px;
+  color: #6f7a94;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+.brand-strip-bottom-dot {
+  width: 4px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #9e83ff;
+}
+
+/* Responsive */
+
+@media (max-width: 575.98px) {
+  .brand-strip {
+    padding: 24px 0 20px;
+  }
+
+  .brand-strip-heading {
+    gap: 9px;
+    margin-bottom: 17px;
+  }
+
+  .brand-strip-heading p {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .brand-strip-line {
+    width: 20px;
+  }
+
+  .brand-strip-item {
+    gap: 9px;
+    padding: 5px 17px;
+    font-size: 12px;
+  }
+
+  .brand-strip-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .brand-strip-star {
+    margin-left: 6px;
+  }
+
+  .brand-strip-bottom {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 17px;
+    font-size: 7px;
+    letter-spacing: 0.9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-strip-track {
+    animation: none;
+    transform: none;
+  }
+}
