@@ -332,7 +332,7 @@ export default function Projects() {
             </span>
             <span>
               <strong>Your project could be next.</strong>
-              <small>Lets turn your next big idea into something real.</small>
+              <small>Let's turn your next big idea into something real.</small>
             </span>
           </div>
 
