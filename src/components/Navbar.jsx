@@ -4,7 +4,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import "../css/Navbar.css";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
+  { label: "Services", href: "/services" },
   { label: "Our Work", href: "#work" },
   { label: "About Us", href: "#about" },
 ];
